@@ -1,3 +1,23 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.top-photo {
+    height: 1000px;
+    background: linear-gradient(
+          rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),  url(“MTNCover.jpg“) top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.second-photo {
+    height: 1000px;
+    background: linear-gradient(
+          rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),  url(“https://i.ytimg.com/vi/zAjrAtg_XoA/maxresdefault.jpg”) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
