@@ -1,33 +1,13 @@
 
-<div class='second-photo'>
-  <div class="row firstname">
-     <form class="col s12">
-       <div class="row">
-         <div class="input-field col s6">
-           <input placeholder="" id="first_name" type="text" class="validate">
-           <label for="name">First Name</label>
-         </div>
+<h1> <%= current_user.name %> Mountains </h1>
+<p><%= link_to 'Add New Mountain', new_mountain_path %></p>
+<% @users_mountains.each do |mountain| %>
+    <h3><%= mountain.name %></h3>
+    <h3>Elevation: <%= mountain.elevation %></h3>
+    <h3>Lat/Long: <%= mountain.latitude %>, <%= mountain.longitude %></h3>
+    <h3>Difficulty rating: <%= mountain.ability %></h3>
+    <%= link_to 'Show Mountain', mountain_path(mountain) %>
+    <%= link_to 'Edit Mountain', edit_mountain_path(mountain) %>
+    <%= link_to 'Delete Mountain', mountain_path(mountain), method: :delete %>
 
-       <div class="row">
-         <div class="input-field col s12">
-           <input type="text" class="validate">
-           <label for="abilty">Climbing Ability</label>
-         </div>
-       </div>
-       <div class="row">
-         <div class="input-field col s12">
-           <input id="password" type="password" class="validate">
-           <label for="password">Password</label>
-         </div>
-       </div>
-       <div class="row">
-         <div class="input-field col s12">
-           <input id="email" type="email" class="validate">
-           <label for="email">Email</label>
-         </div>
-
-       </div>
-
-       <button type="button">Submit!</button>
-  </div>
-</div>
+<% end %>
