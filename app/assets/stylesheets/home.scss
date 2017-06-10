@@ -1,7 +1,8 @@
-.top-photo {
+
+.second-photo {
     height: 1000px;
     background: linear-gradient(
-          rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),  url(“MTNCover.jpg“) top center no-repeat;
+          rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),  url("MTNCover2.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -10,14 +11,10 @@
     color: black;
 }
 
-.second-photo {
-    height: 1000px;
-    background: linear-gradient(
-          rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),  url(“https://i.ytimg.com/vi/zAjrAtg_XoA/maxresdefault.jpg”) center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
+.firstname{
+  font-family: fantasy;
+  font-size: 50px;
+  color: white;
+  text-shadow: 4px 4px #000000;
+
 }
