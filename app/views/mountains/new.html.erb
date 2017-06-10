@@ -1,2 +1,19 @@
-<h1>Mountains#new</h1>
-<p>Find me in app/views/mountains/new.html.erb</p>
+<h1> New Mountain </h1>
+<%= form_for @mountain do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :elevation %>
+  <%= f.number_field :elevation %>
+
+  <%= f.label :latitude %>
+  <%= f.number_field :latitude, class: :text_field, step: :any %>
+
+  <%= f.label :longitude %>
+  <%= f.number_field :longitude, class: :text_field, step: :any %>
+
+  <%= f.label :rating %>
+  <%= f.number_field :rating %>
+
+  <%= f.submit %>
+<% end %>
