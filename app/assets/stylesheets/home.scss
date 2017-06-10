@@ -5,7 +5,6 @@
           rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),  url("MTNCover2.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
     justify-content: center;
     align-items: center;
     color: black;
@@ -13,8 +12,19 @@
 
 .firstname{
   font-family: fantasy;
-  font-size: 50px;
+  font-size: 50px !important;
   color: white;
   text-shadow: 4px 4px #000000;
 
+}
+
+
+.sign {
+  font-size: 30px;
+  border: none !important;
+  background-color: none !important;
+}
+
+.text {
+  font-size: 30px;
 }
