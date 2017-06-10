@@ -1,9 +1,4 @@
 Rails.application.routes.draw do
-  get 'mountains/index'
-
-  get 'mountains/new'
-
-  get 'mountains/show'
 
   devise_for :users
   # devise_for :users
