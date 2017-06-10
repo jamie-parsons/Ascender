@@ -18,7 +18,7 @@ class MountainsController < ApplicationController
 
   def update
 
-    if Mountain.update(mountain_params)
+    if @mountain.update(mountain_params)
       redirect_to mountains_path
     else
       render :edit
@@ -44,7 +44,7 @@ class MountainsController < ApplicationController
   private
 
   def mountain_params
-    params.require(:mountain).permit(:name, :elevation, :latitude, :longitude, :rating)
+    params.require(:mountain).permit(:name, :elevation, :latitude, :longitude, :ability)
   end
 
   def set_mountain
