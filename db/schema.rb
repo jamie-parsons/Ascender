@@ -16,11 +16,11 @@ ActiveRecord::Schema.define(version: 20170610171318) do
   enable_extension "plpgsql"
 
   create_table "mountains", force: :cascade do |t|
-    t.string "name"
-    t.integer "elevation"
-    t.float "latitude"
-    t.float "longitude"
-    t.string "ability"
+    t.string "name", null: false
+    t.integer "elevation", null: false
+    t.float "latitude", null: false
+    t.float "longitude", null: false
+    t.string "ability", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
