@@ -1,2 +1,12 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1> <%= current_user.name %> Mountains </h1>
+<p><%= link_to 'Add New Mountain', new_mountain_path %></p>
+<% @users_mountains.each do |mountain| %>
+    <h3><%= mountain.name %></h3>
+    <h3>Elevation: <%= mountain.elevation %></h3>
+    <h3>Lat/Long: <%= mountain.latitude %>, <%= mountain.longitude %></h3>
+    <h3>Difficulty rating: <%= mountain.ability %></h3>
+    <%= link_to 'Show Mountain', mountain_path(mountain) %>
+    <%= link_to 'Edit Mountain', edit_mountain_path(mountain) %>
+    <%= link_to 'Delete Mountain', mountain_path(mountain), method: :delete %>
+
+<% end %>
