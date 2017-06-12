@@ -6,7 +6,7 @@
       <%= devise_error_messages! %>
 
       <div class='field'>
-        <div class="input-field col s12">
+        <div class="input-field col s12"><br />
           <%= f.text_field :name, id: 'name', class: 'validate' %>
           <%= f.label :name, for: 'name' %><br />
         </div>
@@ -15,7 +15,7 @@
 
 
     <div class='field'>
-      <div class="input-field col s12">
+      <div class="input-field col s12"><br />
         <%= f.text_field :ability, id: 'ability', class: 'validate' %>
         <%= f.label :ability, for: 'ability' %><br />
       </div>
@@ -23,7 +23,7 @@
 
 
     <div class="field">
-      <div class="input-field col s12">
+      <div class="input-field col s12"><br />
         <%= f.email_field :email, id: 'email', class: 'validate', autofocus: true %>
         <%= f.label :email, for: 'ability' %><br />
       </div>
@@ -31,7 +31,7 @@
 
 
     <div class="field">
-      <div class="input-field col s12">
+      <div class="input-field col s12"><br />
         <%= f.label :password, for: 'password' %>
         <%= f.password_field :password, id: 'password', class: 'validate', autocomplete: "off" %>
       </div>
@@ -40,14 +40,14 @@
 
 
     <div class="field">
-      <div class="input-field col s12">
+      <div class="input-field col s12"><br />
         <%= f.label :password_confirmation %>
         <%= f.password_field :password_confirmation, autocomplete: "off" %>
       </div>
     </div>
 
-      <div class="actions col s12 center sign">
-        <%= f.submit "Sign up" %>
+      <div class="actions col s12 sign"><br />
+        <%= f.submit "Sign up", class: 'btn' %>
       </div>
 
 
