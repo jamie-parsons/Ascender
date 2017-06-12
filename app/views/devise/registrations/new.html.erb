@@ -1,6 +1,6 @@
 <div class='second-photo'>
-  <div class="row firstname container">
-    <h2>Sign up</h2>
+  <div class="row firstname container"><br />
+    <h3>Sign up</h3>
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
@@ -46,7 +46,7 @@
       </div>
     </div>
 
-      <div class="actions col s12 sign"><br />
+      <div class="actions col s12 sign">
         <%= f.submit "Sign up", class: 'btn' %>
       </div>
 
