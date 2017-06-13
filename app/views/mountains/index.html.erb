@@ -1,12 +1,19 @@
 <h1> Mountains </h1>
 <p><%= link_to 'Add New Mountain', new_mountain_path %></p>
-<% @mountains.each do |mountain| %>
-    <h3><%= mountain.name %></h3>
-    <h3>Elevation: <%= mountain.elevation %></h3>
-    <h3>Lat/Long: <%= mountain.latitude %>, <%= mountain.longitude %></h3>
-    <h3>Difficulty rating: <%= mountain.ability %></h3>
-    <%= link_to 'Show Mountain', mountain_path(mountain) %>
-    <%= link_to 'Edit Mountain', edit_mountain_path(mountain) %>
-    <%= link_to 'Delete Mountain', mountain_path(mountain), method: :delete %>
 
-<% end %>
+
+  <div class="row">
+    <% @mountains.each do |mountain| %>
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src=<%= image_path('Everest.jpg') %> />
+          <span class="card-title"><%= mountain.name %></span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red">
+          <i class="material-icons"><%= link_to 'Show Mountain', mountain_path(mountain) %></i></a> 
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+

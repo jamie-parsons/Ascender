@@ -1,10 +1,10 @@
 <h1> Mountain detail </h1>
     <h3><%= @mountain.name %></h3>
-    <h3>Elevation: <%= mountain.elevation %></h3>
-    <h3>Lat/Long: <%= mountain.latitude %> - <%= mountain.longitude %></h3>
-    <h3>Difficulty rating: <%= mountain.ability %></h3>
+    <h3>Elevation: <%= @mountain.elevation %></h3>
+    <h3>Lat/Long: <%= @mountain.latitude %> - <%= @mountain.longitude %></h3>
+    <h3>Difficulty rating: <%= @mountain.ability %></h3>
 
-    <%= link_to 'Show Mountain', mountain_path(mountain) %>
-    <%= link_to 'Edit Mountain', edit_mountain_path(mountain) %>
-    <%= link_to 'Delete Mountain', mountain_path(mountain), method: :delete %>
+    <%= link_to 'Show Mountain', mountain_path(@mountain) %>
+    <%= link_to 'Edit Mountain', edit_mountain_path(@mountain) %>
+    <%= link_to 'Delete Mountain', mountain_path(@mountain), method: :delete %>
     <%= link_to 'Back to Mountains', mountains_path %>
