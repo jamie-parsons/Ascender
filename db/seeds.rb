@@ -39,11 +39,11 @@ Mountain.create(
 )
 
 Mountain.create(
-    name: "Keg Mountain" elevation:	7305, 
+    name: "Keg Mountain", elevation: 7305, 
     latitude: 39.788982, longitude:	112.8413, ability: "Beginner"
 )
 
 Mountain.create(
-    name: "Hilgard Mountain" elevation:	11533, 
+    name: "Hilgard Mountain", elevation: 11533, 
     latitude: 38.684123, longitude: 111.543821, ability: "Beginner"
 )
